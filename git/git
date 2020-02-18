@@ -41,6 +41,7 @@ git add --all
 *.war
 *.ear
 ==========================================
+++++
 -----------delete file
  
 git rm file.txt
