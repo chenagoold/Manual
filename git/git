@@ -1,0 +1,71 @@
+
+================================================
+Git - GitHub
+Chena.github.io
+…or create a new repository on the command line
+
+echo "# Chena.github.io" >> README.md
+git init //Initilisatia projects
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Chenaa/Chena.github.io.git
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/Chenaa/Chena.github.io.git
+git push -u origin master
+git pull //upload
+git add -A //все файлы на запись
+git add --all// 
+===============================================
+
+
+
+git clone https://github.com/username/username.github.io
+
+cd username.github.io
+
+~$echo "Hello World" > index.html
+
+git add --all
+
+~$git commit -m "Initial commit"
+
+~$git push -u origin master
+==============================================
+
+.gitignore 
+
+.idea/*
+*.class
+*.war
+*.ear
+==========================================
+-----------delete file
+ 
+git rm file.txt
+git add file.txt
+git commit -m "delete"
+git push
+
+----------delete directory
+ 
+git rm -r World 
+git add World
+git status 
+git commit -m "delete"
+git push
+
+Вы можете захотеть оставить файл на жестком диске, 
+и убрать его из-под бдительного ока Git'а 
+Чтобы сделать это, используйте опцию --cached:
+git rm --cached readme.txt
+
+
+Перемещаем файл в новую директорию mv file.txt new_dir/ Теперь git видит, 
+что у него один файл удален (file.txt) и один не отслеживается (new_dir/file.txt) 
+Зафиксируем удаление файла file.txt git add file.txt Зафиксируем добавление файла new_dir/file.txt 
+под версионный контроль git add new_dir/file.txt
+
+============================================
+
